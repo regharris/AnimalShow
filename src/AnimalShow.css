@@ -1,0 +1,7 @@
+#animal-box {
+    justify-content: center;
+    text-transform: uppercase;
+    border-radius: 0%;
+    display: flex;
+    text-align: center;
+}

@@ -7,6 +7,7 @@ import cat from './svg/cat.svg'
 import cow from './svg/cow.svg'
 import heart from './svg/heart.svg'
 import horse from './svg/horse.svg'
+import './AnimalShow.css'
 
 const svgMap = {
     bird: bird,
@@ -27,7 +28,7 @@ const Animalshow = ({type}) => {
           setClicks(clicks + 1)
     }
 
-    return <div onClick={handleClick}>
+    return <div id='animal-box' onClick={handleClick}>
         <div>{type}</div>
         <img alt='animal' height='50px' width='50px' src={svgMap[type]}></img>
         <img alt='heart' src={heart} style={{width: 10 + 10 * clicks}}></img>
